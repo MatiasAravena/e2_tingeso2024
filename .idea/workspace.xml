@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7b0ca5b7-f5d2-4970-8ce3-c86d989681b7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Controller/VehiculoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Controller/VehiculoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Entity/VehiculoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Entity/VehiculoEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Repository/VehiculoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Repository/VehiculoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Service/VehiculoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Service/VehiculoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-service/src/main/java/com/example/eurekaservice/EurekaServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-service/src/test/java/com/example/eurekaservice/EurekaServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/example/gatewayservice/GatewayServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/test/java/com/example/gatewayservice/GatewayServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reparaciones/src/main/java/com/example/reparaciones/Entity/Reparacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/reparaciones/src/main/java/com/example/reparaciones/Entity/Reparacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reparaciones/src/main/java/com/example/reparaciones/Repository/ReparacionesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/reparaciones/src/main/java/com/example/reparaciones/Repository/ReparacionesRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,15 +36,23 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2gbx2lpmCb2aXnbqQP1vCA7Mujt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/matia/e2_tingeso2024/reparaciones",
+    "last_opened_file_path": "C:/Users/matia/e2_tingeso2024",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -40,10 +65,14 @@
       <option name="presentableId" value="Default" />
       <updated>1715979873893</updated>
       <workItem from="1715979876014" duration="56000" />
+      <workItem from="1716339528272" duration="775000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
