@@ -17,7 +17,6 @@ import java.security.PrivateKey;
 public class VehiculoEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String patente;
     private String marca;
     private String modelo;

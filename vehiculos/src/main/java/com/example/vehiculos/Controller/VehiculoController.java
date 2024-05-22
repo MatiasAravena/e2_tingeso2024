@@ -4,9 +4,7 @@ import com.example.vehiculos.Entity.VehiculoEntity;
 import com.example.vehiculos.Service.VehiculoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,9 +15,21 @@ public class VehiculoController {
     @Autowired
     VehiculoService vehiculoService;
 
-    @GetMapping
-    public ResponseEntity<List<VehiculoEntity>> getAll(){
-        List<VehiculoEntity> vehiculos = vehiculoService.getAll();
-        return ResponseEntity.ok(vehiculos);
+    @GetMapping("/listar")
+    public ResponseEntity<List<VehiculoEntity>> listarVehiculos(){
+        List<VehiculoEntity> listaVehiculos=vehiculoService.getVehiculos();
+        return ResponseEntity.ok(listaVehiculos);
+    }
+
+    @GetMapping("/{patente}")
+    public ResponseEntity<VehiculoEntity> getVehiculoById(@PathVariable String patente){
+        VehiculoEntity vehiculo= vehiculoService.getVehiculoById(patente);
+        return ResponseEntity.ok(vehiculo);
+    }
+
+    @PostMapping("/")
+    public ResponseEntity<VehiculoEntity> saveVehiculo(@RequestBody VehiculoEntity vehiculo){
+        VehiculoEntity nuevoVehiculo = vehiculoService.saveVehiculo(vehiculo);
+        return ResponseEntity.ok(nuevoVehiculo);
     }
 }
