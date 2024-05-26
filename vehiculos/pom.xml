@@ -78,6 +78,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>vehiculos</finalName>
 	</build>
 
 </project>

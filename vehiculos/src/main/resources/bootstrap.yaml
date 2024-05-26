@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: vehiculos
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081
+  datasource:
+    url: jdbc:postgres://localhost:5432/vehiculos
+    username: postgres
+    password: 1501
+  jpa:
+    hibernate:
+      ddl-auto: update

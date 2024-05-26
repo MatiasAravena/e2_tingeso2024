@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: reparaciones
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081
+  datasource:
+    url: jdbc:mysql://localhost:5432/reparaciones
+    username: postgres
+    password: 1501
+  jpa:
+    hibernate:
+      ddl-auto: update
