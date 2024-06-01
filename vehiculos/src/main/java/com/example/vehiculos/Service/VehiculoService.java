@@ -23,4 +23,8 @@ public class VehiculoService {
         return vehiculoRepository.findByPatente(patente);
     }
 
+    //verificar si vehiculo llegó por primera vez
+    public boolean primeraVez(VehiculoEntity autito){
+        return true;
+    }
 }
