@@ -1,0 +1,34 @@
+kind: Deployment
+metadata:
+  name: eureka-server-deployment
+  labels:
+    app: eureka-server-deployment
+spec:
+  selector:
+    matchlabels:
+      app: eureka-server-deployment
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: eureka-server-deployment
+    spec:
+      containers:
+        - name: eureka-server
+          image: 6ato/eureka-server
+          ports:
+            - containerPort: 8080
+---
+kind: service
+metadata:
+  name: eureka-server-service
+  labels:
+    app: eureka-server-service
+spec:
+  selector:
+    app: eureka-server-deployment
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer

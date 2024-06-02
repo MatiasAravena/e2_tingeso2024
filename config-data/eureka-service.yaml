@@ -6,3 +6,5 @@ eureka:
     register-with-eureka: false
     server-url:
       default-zone: http://localhost:8080/eureka/
+    instance:
+      hostname: localhost
