@@ -3,10 +3,10 @@ server:
 
 eureka:
   client:
-    service-url:
-      defaultZone: http://localhost:8080
     fetch-registry: true
     register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
   instance:
     hostname: localhost
 
@@ -20,8 +20,8 @@ spring:
         - id: vehiculos
           uri: lb://vehiculos
           predicates:
-            - path=/vehiculo/**
+            - Path=/vehiculo/**
         - id: reparaciones
           uri: lb://reparaciones
           predicates:
-            - path=/reparacion/**
+            - Path=/reparacion/**
