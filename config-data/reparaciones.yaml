@@ -1,10 +1,15 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/reparaciones
+    username: postgres
+    password: 1501
 eureka:
   client:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      default-zone: http://localhost:8010/eureka
+      default-zone: http://localhost:8080/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance.id${random.value}}
