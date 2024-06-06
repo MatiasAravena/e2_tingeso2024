@@ -5,4 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 
 public interface ReparacionesRepository extends JpaRepository<Reparacion, String> {
+    public Reparacion findByPatente(String patente);
 }

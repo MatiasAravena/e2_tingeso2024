@@ -7,7 +7,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Generated;
 import lombok.NoArgsConstructor;
 
 import java.sql.Date;
@@ -19,7 +18,6 @@ import java.sql.Time;
 @AllArgsConstructor
 public class Reparacion {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String patente;
     private Date fechaIng;
     private Time horaIng;
