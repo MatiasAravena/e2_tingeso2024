@@ -5,6 +5,10 @@ spring:
     url: jdbc:postgresql://localhost:5432/vehiculos
     username: postgres
     password: 1501
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 eureka:
   client:
     fetch-registry: true
