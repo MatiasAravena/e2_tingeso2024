@@ -21,6 +21,7 @@ public class Reparacion {
     private String patente;
     private Date fechaIng;
     private Time horaIng;
+    private String tipo;
     private Integer montoTotalReparaciones;
     private Integer recargos;
     private Integer descuentos;

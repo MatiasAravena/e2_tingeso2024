@@ -1,3 +1,4 @@
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gateway-server-deployment
@@ -5,7 +6,7 @@ metadata:
     app: gateway-server-deployment
 spec:
   selector:
-    matchlabels:
+    matchLabels:
       app: gateway-server-deployment
   replicas: 1
   template:
@@ -19,11 +20,12 @@ spec:
           ports:
             - containerPort: 8082
 ---
-kind: service
+apiVersion: v1
+kind: Service
 metadata:
   name: gateway-server-service
   labels:
-    app:gateway-server-service
+    app: gateway-server-service
 spec:
   selector:
     app: gateway-server-deployment

@@ -1,3 +1,4 @@
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: eureka-server-deployment
@@ -5,7 +6,7 @@ metadata:
     app: eureka-server-deployment
 spec:
   selector:
-    matchlabels:
+    matchLabels:
       app: eureka-server-deployment
   replicas: 1
   template:
@@ -19,7 +20,8 @@ spec:
           ports:
             - containerPort: 8080
 ---
-kind: service
+apiVersion: v1
+kind: Service
 metadata:
   name: eureka-server-service
   labels:
