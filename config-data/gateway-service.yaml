@@ -2,13 +2,13 @@ server:
   port: 8082
 
 eureka:
+  instance:
+    hostname: localhost
   client:
     fetch-registry: true
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8080/eureka/
-  instance:
-    hostname: localhost
 
 spring:
   cloud:
@@ -16,8 +16,6 @@ spring:
       discovery:
         locator:
           enabled: true
-        default-filters:
-          - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
       globalcors:
         cors-configurations:
           '[/**]':
