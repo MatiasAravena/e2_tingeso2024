@@ -1,17 +1,14 @@
 import axios from "axios";
 
-const vehiculos = axios.create({
-    baseURL: `http://localhost:8010`,
+const localhost = "localhost";
+const port = "8082";
+
+console.log(localhost)
+console.log(port)
+
+export default axios.create({
+    baseURL: `http://${localhost}:${port}`,
     headers: {
         'Content-Type': 'application/json'
     }
-});
-
-const reparaciones = axios.create({
-    baseURL: `http://localhost:8011`,
-    headers: {
-        'Content-Type': 'application/json'
-    }
-});
-
-export default {vehiculos, reparaciones};
+}); 

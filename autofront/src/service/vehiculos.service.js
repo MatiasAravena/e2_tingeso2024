@@ -1,9 +1,10 @@
 import axios from 'axios';
+import httpClient from "../http-common";
 
 const url = 'http://localhost:8010/vehiculos';
 
 const getAll = () => {
-    return axios.get(`${url}/listar`);
+    return httpClient.get(`${url}/listar`);
 }
 
 const create = data => {
