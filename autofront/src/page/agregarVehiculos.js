@@ -26,8 +26,7 @@ const AgregarVehiculo = () => {
   
       const vehiculo = { patente, marca, modelo, tipoauto, anofabricacion, tipomotor, asientos, id };
       if (id) {
-        vehiculosService
-          .update(vehiculo)
+        vehiculosService.update(id, vehiculo)
           .then((response) => {
             console.log("vehiculo actualizado.", response.data);
             navigate("/mostrar");
@@ -39,8 +38,7 @@ const AgregarVehiculo = () => {
             );
           });
       } else {
-        vehiculosService
-          .create(vehiculo)
+        vehiculosService.create(vehiculo)
           .then((response) => {
             console.log("Vehiculo añadido.", response.data);
             navigate("/mostrar");
@@ -57,8 +55,7 @@ const AgregarVehiculo = () => {
     useEffect(() => {
       if (id) {
         setTituloVehiculoForm("Editar Vehiculo");
-        vehiculosService
-          .get(id)
+        vehiculosService.get(id)
           .then((vehiculo) => {
             setPatente(vehiculo.data.patente);
             setMarca(vehiculo.data.marca);
@@ -74,10 +71,10 @@ const AgregarVehiculo = () => {
       } else {
         setTituloVehiculoForm("Nuevo Vehiculo");
       }
-    }, []);
+    }, [id]);
 
     return(
-        <div class='container'>
+        <div className='container'>
           <Link
           to="/"
           style={{ textDecoration: "none", marginBottom: "1rem" }}
@@ -98,7 +95,6 @@ const AgregarVehiculo = () => {
           >
             <h3> {tituloVehiculoForm} </h3>
             <hr />
-            <form>
               <FormControl fullWidth>
                 <TextField
                   id="patente"
@@ -190,6 +186,7 @@ const AgregarVehiculo = () => {
                 <Button
                   variant="contained"
                   color="info"
+                  type="submit"
                   onClick={(e) => saveVehiculo(e)}
                   style={{ marginLeft: "0.5rem" }}
                   startIcon={<SaveIcon />}
@@ -197,7 +194,6 @@ const AgregarVehiculo = () => {
                   Registrar
                 </Button>
               </FormControl>
-            </form>
             <hr />
             <Link to="/mostrar">Lista de vehiculos</Link>
           </Box>

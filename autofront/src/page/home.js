@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
-      <div class="container text-center">
+      <div className="container text-center">
         <h1>Autofix: el mejor sistema de reparado de vehiculos del mundo
         </h1>
         <p>

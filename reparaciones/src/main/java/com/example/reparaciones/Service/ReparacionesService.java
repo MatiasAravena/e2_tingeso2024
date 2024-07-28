@@ -65,4 +65,8 @@ public class ReparacionesService {
         }
         return 0.0;
     }
+
+    public Double descuentoPorBonos(){
+        return 70000.0;
+    }
 }

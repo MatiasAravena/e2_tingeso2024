@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="config-server">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/config-service/target/config-server.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

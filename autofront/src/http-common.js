@@ -6,9 +6,11 @@ const port = "8082";
 console.log(localhost)
 console.log(port)
 
-export default axios.create({
+const httpClient = axios.create({
     baseURL: `http://${localhost}:${port}`,
     headers: {
         'Content-Type': 'application/json'
     }
-}); 
+});
+
+export default httpClient;

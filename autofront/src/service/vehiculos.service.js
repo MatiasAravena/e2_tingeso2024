@@ -1,25 +1,24 @@
-import axios from 'axios';
 import httpClient from "../http-common";
 
-const url = 'http://localhost:8010/vehiculos';
 
 const getAll = () => {
-    return httpClient.get(`${url}/listar`);
+    return httpClient.get(`/vehiculo/listar`);
 }
 
 const create = data => {
-    return axios.post(url, data);
+    return httpClient.post('/vehiculo', data);
 }
 
 const get = id => {
-    return axios.get(`${url}/${id}`);
+    return httpClient.get(`/vehiculo/${id}`);
 }
 
-const update = data => {
-    return axios.put(url, data);
+const update = (id, data) => {
+    return httpClient.put(`/vehiculo/${id}`, data);
 }
 
 const remove = id => {
-    return axios.delete(`${url}/${id}`);
+    return httpClient.delete(`vehiculo/${id}`);
 }
+
 export default { getAll, create, get, update, remove };

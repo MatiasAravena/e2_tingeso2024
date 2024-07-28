@@ -5,32 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b0ca5b7-f5d2-4970-8ce3-c86d989681b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/deployment/config-server-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/postgres-config-map.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/postgres-secrets.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/reparaciones-db-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/reparaciones-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/vehiculos-db-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/vehiculos-deployment-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reportes/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reportes/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reportes/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reportes/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reportes/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reportes/src/main/java/com/example/reportes/Entity/Reportes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reportes/src/main/java/com/example/reportes/ReportesApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reportes/src/main/java/com/example/reportes/Repositories/ReporteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reportes/src/main/java/com/example/reportes/Services/ReporteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reportes/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reportes/src/test/java/com/example/reportes/ReportesApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-data/reparaciones.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-data/reparaciones.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/eureka-server-deployment-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/eureka-server-deployment-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/gateway-server-deployment-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/gateway-server-deployment-service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reparaciones/src/main/java/com/example/reparaciones/Entity/Reparacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/reparaciones/src/main/java/com/example/reparaciones/Entity/Reparacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Repository/VehiculoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Repository/VehiculoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autofront/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/autofront/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autofront/src/page/agregarVehiculos.js" beforeDir="false" afterPath="$PROJECT_DIR$/autofront/src/page/agregarVehiculos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autofront/src/page/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/autofront/src/page/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autofront/src/service/vehiculos.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/autofront/src/service/vehiculos.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reparaciones/src/main/java/com/example/reparaciones/Service/ReparacionesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/reparaciones/src/main/java/com/example/reparaciones/Service/ReparacionesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Controller/VehiculoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Controller/VehiculoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Entity/VehiculoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehiculos/src/main/java/com/example/vehiculos/Entity/VehiculoEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +42,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/matia/e2_tingeso2024/config-service",
+    "last_opened_file_path": "C:/Users/matia/e2_tingeso2024",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,6 +54,31 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Autofix" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -88,6 +96,7 @@
       <workItem from="1718171829301" duration="3261000" />
       <workItem from="1718254307572" duration="2078000" />
       <workItem from="1719438439079" duration="249000" />
+      <workItem from="1722027074791" duration="975000" />
     </task>
     <servers />
   </component>

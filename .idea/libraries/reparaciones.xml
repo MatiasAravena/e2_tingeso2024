@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="reparaciones">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/reparaciones/target/reparaciones.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
