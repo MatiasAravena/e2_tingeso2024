@@ -24,7 +24,7 @@ spring:
             allowedHeaders: "*"
       routes:
         - id: vehiculos
-          uri: lb://vehiculo
+          uri: lb://vehiculos
           predicates:
             - Path=/vehiculo/**
         - id: reparaciones
