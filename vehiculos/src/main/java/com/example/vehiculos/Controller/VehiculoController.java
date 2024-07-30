@@ -3,6 +3,8 @@ package com.example.vehiculos.Controller;
 import com.example.vehiculos.Entity.VehiculoEntity;
 import com.example.vehiculos.Service.VehiculoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +16,11 @@ import java.util.List;
 public class VehiculoController {
 
     @Autowired
-    VehiculoService vehiculoService;
+    private final VehiculoService vehiculoService;
+
+    public VehiculoController(VehiculoService vehiculoService) {
+        this.vehiculoService = vehiculoService;
+    }
 
     @GetMapping("/listar")
     public ResponseEntity<List<VehiculoEntity>> listarVehiculos(){
@@ -31,6 +37,6 @@ public class VehiculoController {
     @PostMapping("/")
     public ResponseEntity<VehiculoEntity> saveVehiculo(@RequestBody VehiculoEntity vehiculo){
         VehiculoEntity nuevoVehiculo = vehiculoService.saveVehiculo(vehiculo);
-        return ResponseEntity.ok(nuevoVehiculo);
+        return new ResponseEntity<>(nuevoVehiculo, HttpStatus.CREATED);
     }
 }
