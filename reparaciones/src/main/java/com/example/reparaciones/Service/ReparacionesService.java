@@ -66,7 +66,16 @@ public class ReparacionesService {
         return 0.0;
     }
 
-    public Double descuentoPorBonos(){
-        return 70000.0;
+    public Double descuentoPorBonos(String marca){
+        if (marca.equals("Toyota")) {
+            return 70000.0;
+        } else if (marca.equals("Ford")) {
+            return 50000.0;
+        } else if (marca.equals("Hyundai")) {
+            return 30000.0;
+        }else if(marca.equals("Honda")){
+            return 40000.0;
+        }
+        else return 0.0;
     }
 }

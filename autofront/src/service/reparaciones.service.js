@@ -1,6 +1,5 @@
 import httpClient from "../http-common";
-import vehiculos from "mm/http-common";
-import reparaciones from "mm/http-common";
+
 
 const getAll = () => {
     return httpClient.get('/api/reparaciones/listar');

@@ -34,7 +34,7 @@ public class VehiculoController {
         return ResponseEntity.ok(vehiculo);
     }
 
-    @PostMapping("/")
+    @PostMapping
     public ResponseEntity<VehiculoEntity> saveVehiculo(@RequestBody VehiculoEntity vehiculo){
         VehiculoEntity nuevoVehiculo = vehiculoService.saveVehiculo(vehiculo);
         return new ResponseEntity<>(nuevoVehiculo, HttpStatus.CREATED);

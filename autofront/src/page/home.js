@@ -51,6 +51,17 @@ const Home = () => {
                 Agregar Reparaciones
             </Button>
             </Link>
+            <Link
+            to="/cotizar"
+            style={{ textDecoration: "none", marginBottom: "1rem" }}
+            >
+            <Button
+                variant="contained"
+                color="primary"
+            >
+                Lista de reparaciones
+            </Button>
+            </Link>
         </p>
       </div>
       

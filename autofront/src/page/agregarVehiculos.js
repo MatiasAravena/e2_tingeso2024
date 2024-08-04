@@ -14,7 +14,7 @@ const AgregarVehiculo = () => {
     const [marca, setMarca] = useState("");
     const [modelo, setModelo] = useState("");
     const [tipoauto, setTipoauto] = useState("");
-    const [anofabricacion, setAnofabricacion] = useState("");
+    const [fabricacion, setFabricacion] = useState("");
     const [tipomotor, setTipomotor] = useState("");
     const [asientos, setAsientos] = useState("");
     const { id } = useParams();
@@ -23,8 +23,14 @@ const AgregarVehiculo = () => {
   
     const saveVehiculo = (e) => {
       e.preventDefault();
-  
-      const vehiculo = { patente, marca, modelo, tipoauto, anofabricacion, tipomotor, asientos, id };
+
+      const fabricacionInt = parseInt(fabricacion);
+      if (isNaN(fabricacionInt)) {
+        alert("Año de fabricacion debe ser entero");
+        return;
+      }
+
+      const vehiculo = { patente, marca, modelo, tipoauto, fabricacion, tipomotor, asientos, id };
       if (id) {
         vehiculosService.update(id, vehiculo)
           .then((response) => {
@@ -61,7 +67,7 @@ const AgregarVehiculo = () => {
             setMarca(vehiculo.data.marca);
             setModelo(vehiculo.data.modelo);
             setTipoauto(vehiculo.data.tipoauto);
-            setAnofabricacion(vehiculo.data.anofabricacion);
+            setFabricacion(vehiculo.data.fabricacion);
             setTipomotor(vehiculo.data.tipomotor);
             setAsientos(vehiculo.data.asientos);
           })
@@ -145,14 +151,12 @@ const AgregarVehiculo = () => {
 
               <FormControl fullWidth>
                 <TextField
-                  id="anofabricacion"
+                  id="fabricacion"
                   label="Año de Fabricacion"
-                  value={anofabricacion}
+                  value={fabricacion}
                   variant="standard"
-                  onChange={(e) => setAnofabricacion(e.target.value)}
-                  style={{ width: "25%" }}
-                >
-                </TextField>
+                  onChange={(e) => setFabricacion(e.target.value)}
+                />
               </FormControl>
 
               <FormControl fullWidth>
